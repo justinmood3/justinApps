@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="JUSTIN APPS — discover and download useful apps for Android and Windows.">
+  <title>JUSTIN APPS — Apps made for everyone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">J<span>+</span></span><span>JUSTIN <b>APPS</b><small>Apps made for everyone</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a><a href="#apps">Applications</a><a href="#downloads">Downloads</a><a href="#about">About</a><a class="nav-cta" href="#apps">Explore apps ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR APP COLLECTION</div>
+        <h1>Great apps.<br><span>One place.</span></h1>
+        <p class="hero-text">Discover applications built to make everyday digital life simpler. Download for Android or Windows, explore features, and get started.</p>
+        <div class="hero-actions"><a class="button primary" href="#apps">Explore applications <span>↗</span></a><a class="button ghost" href="#downloads">Download center</a></div>
+        <div class="hero-notes"><span>✦ Android APKs</span><span>✦ Windows installers</span><span>✦ Clear instructions</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative app cards">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-card card-chat"><div class="app-icon chat-icon">☏</div><div><b>ChatMate</b><small>Connect. Chat. Stay close.</small><span class="tag green">Local chat</span></div></div>
+        <div class="floating-card card-ai"><div class="app-icon ai-icon">✦</div><div><b>Justin AI</b><small>Your AI assistant</small><span class="tag purple">AI tools</span></div></div>
+        <div class="floating-card card-clinic"><div class="app-icon clinic-icon">✚</div><div><b>Kiziba Health Clinic</b><small>Clinic management</small><span class="tag blue">Productivity</span></div></div>
+        <div class="hero-center"><div class="center-logo">J<span>+</span></div><b>JUSTIN APPS</b><small>Discover something useful</small></div>
+      </div>
+    </section>
+    <section class="trust-strip"><div><b>01</b><span>Discover apps</span></div><div><b>02</b><span>Choose your platform</span></div><div><b>03</b><span>Install and get started</span></div></section>
+    <section class="section" id="apps">
+      <div class="section-heading"><div><div class="eyebrow">THE COLLECTION</div><h2>Explore applications</h2><p>Find an app, see what it does, and choose the right version for your device.</p></div><div class="filter-row"><button class="filter active" data-filter="all">All apps</button><button class="filter" data-filter="communication">Communication</button><button class="filter" data-filter="ai">AI</button><button class="filter" data-filter="productivity">Productivity</button></div></div>
+      <div class="app-grid">
+        <article class="app-card" data-category="communication"><div class="card-top"><div class="app-icon chat-icon">☏</div><span class="status planned">Build in progress</span></div><h3>ChatMate</h3><p>Messaging with user profiles, presence, last seen, and local-network chat designed to work without internet on the same network.</p><div class="platforms"><span>▣ Android</span><span>▰ Windows</span></div><a class="text-link" href="#downloads">View download options <span>→</span></a></article>
+        <article class="app-card" data-category="ai"><div class="card-top"><div class="app-icon ai-icon">✦</div><span class="status planned">Build in progress</span></div><h3>Justin AI</h3><p>An AI assistant project for asking questions, learning, and getting help with everyday tasks.</p><div class="platforms"><span>◉ Web</span><span>▣ Android planned</span></div><a class="text-link" href="#downloads">View download options <span>→</span></a></article>
+        <article class="app-card" data-category="communication"><div class="card-top"><div class="app-icon mate-icon">◎</div><span class="status planned">Build in progress</span></div><h3>ChatMate Messenger</h3><p>A messaging project focused on conversations, account profiles, and live contact status.</p><div class="platforms"><span>◉ Web</span><span>▣ Android planned</span></div><a class="text-link" href="#downloads">View download options <span>→</span></a></article>
+        <article class="app-card" data-category="productivity"><div class="card-top"><div class="app-icon clinic-icon">✚</div><span class="status planned">Build in progress</span></div><h3>Kiziba Health Clinic</h3><p>A clinic management project for organizing patient workflows and clinic information.</p><div class="platforms"><span>◉ Web</span><span>▰ Windows planned</span></div><a class="text-link" href="#downloads">View download options <span>→</span></a></article>
+        <article class="app-card" data-category="productivity"><div class="card-top"><div class="app-icon hub-icon">⌘</div><span class="status planned">Coming soon</span></div><h3>Social Hub</h3><p>A launcher-style app that gathers social platforms in one place and asks for approval before opening a link.</p><div class="platforms"><span>▣ Android</span><span>▰ Windows</span></div><a class="text-link" href="#downloads">View download options <span>→</span></a></article>
+        <article class="app-card add-card"><div class="add-symbol">＋</div><h3>More apps coming</h3><p>New projects and updates will be listed here as their installers become available.</p><a class="text-link" href="#about">About JUSTIN APPS <span>→</span></a></article>
+      </div>
+    </section>
+    <section class="download-section" id="downloads"><div class="download-copy"><div class="eyebrow">DOWNLOAD CENTER</div><h2>Choose your device.</h2><p>Download buttons will become active when a tested installer has been published. Until then, use the project source code and build instructions.</p><div class="download-note">⚠️ Only download installers published by the official JUSTIN APPS website or its linked official release page.</div></div>
+      <div class="download-options">
+        <div class="download-card"><div class="device-icon">▣</div><div class="download-card-copy"><h3>Android</h3><p>APK installer for compatible Android phones.</p><span class="file-state" id="androidState">Installer not published yet</span></div><a class="button download disabled" id="androidDownload" href="#" aria-disabled="true">APK not available</a></div>
+        <div class="download-card"><div class="device-icon">▰</div><div class="download-card-copy"><h3>Windows</h3><p>Desktop installer for Windows computers.</p><span class="file-state" id="windowsState">Installer not published yet</span></div><a class="button download disabled" id="windowsDownload" href="#" aria-disabled="true">EXE not available</a></div>
+        <div class="source-row"><div><b>Developer resources</b><small>Source code and build instructions for contributors.</small></div><a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+    </section>
+    <section class="section about-section" id="about"><div class="about-icon">J<span>+</span></div><div><div class="eyebrow">ABOUT THE PROJECT</div><h2>Built with curiosity.<br>Made to be useful.</h2><p>JUSTIN APPS is a home for independent software projects. Each app should have a clear purpose, installation instructions, version details, and a way to report issues.</p><div class="about-pills"><span>Beginner-friendly</span><span>Mobile-ready</span><span>Regular updates</span></div></div></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">J<span>+</span></span><span>JUSTIN <b>APPS</b><small>Apps made for everyone</small></span></a><div class="footer-links"><a href="#apps">Applications</a><a href="#downloads">Downloads</a><a href="#about">About</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></div><p>© <span id="year"></span> JUSTIN APPS. Use software responsibly and download only trusted releases.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
