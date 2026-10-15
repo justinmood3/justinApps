@@ -17,14 +17,27 @@ document.querySelectorAll('.filter').forEach(button => {
 
 /*
   RELEASE SETUP:
-  When an installer is published, replace the placeholder below with its
-  actual relative path or verified GitHub Releases URL. Do not enable a
-  download button until the installer exists and has been tested.
+  1. Change YOURNAME and YOURREPO below to your GitHub username and repo name.
+  2. Set VERSION to match the tag of your GitHub Release (for example v1.0.0).
+  3. Only enable a download after the installer is uploaded and tested.
+  To keep a button disabled, leave its url as "".
 */
+const VERSION = "v1.0.0";
+const BASE = `https://github.com/justinmood3/socialHub/releases/download/${VERSION}`;
+
 const releases = {
-  android: { url: "", label: "APK not available", state: "Installer not published yet" },
-  windows: { url: "", label: "EXE not available", state: "Installer not published yet" }
+  android: {
+    url: "",
+    label: "APK not available",
+    state: "Installer not published yet"
+  },
+  windows: {
+    url: `${BASE}/SocialLauncher-Setup.exe`,
+    label: "SocialLauncher-Setup.exe",
+    state: `Version ${VERSION.replace('v', '')}`
+  }
 };
+
 function setupDownload(key, buttonId, stateId) {
   const release = releases[key];
   const button = document.getElementById(buttonId);
@@ -41,5 +54,6 @@ function setupDownload(key, buttonId, stateId) {
     button.setAttribute('aria-disabled', 'true');
   }
 }
+
 setupDownload('android', 'androidDownload', 'androidState');
 setupDownload('windows', 'windowsDownload', 'windowsState');
